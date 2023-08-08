@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, Sans-Serif;
+            font-weight: 600;
+            font-size: 30px;
+            background-color: #17252a;
+            color: #17252a;
+            
+        }
+
+        #flexContainer {
+            display: flex;
+        }
+
+        header {
+            background-color: #3aafa9;
+            min-height: 100px;
+            margin: 3px;
+            padding: 5px;
+            text-align: center;
+            color: #feffff; 
+            font-family: grad, serif;
+            font-weight: 700;        
+        }
+
+        nav {
+            background-color: #3aafa9;
+            flex: 1 1 15%;
+            min-width: 300px;
+            margin: 3px;
+            padding: 3px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        aside {
+            background-color: #3aafa9;
+            flex: 1 1 15%;
+            min-width: 300px;
+            padding: 3px;
+            margin: 3px;
+            font-size: 15px;
+        }
+
+        .content {
+            min-height: 500px;
+            background-color: #3aafa9;
+            flex: 2 1 70%;
+            margin: 3px;
+            padding: 3px;
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: #3aafa9;
+            min-height: 150px;
+            margin: 3px;
+            padding: 3px;
+            font-size: 15px;
+        }
+
+        .pos-head{
+            position: relative;
+            top: 35px;
+        }
+
+        .pp{
+            text-align: left;
+            text-align: justify;
+            padding: 0px 10px 10px 10px;
+        }
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .row{
+            display: flex;
+        }
+
+        .column{
+            flex: 50%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .list{
+            margin: 5px;
+        }
+
+        .hero{
+            margin-top: 200px;
+        }
+
+        .pos-foot{
+            text-align: center;
+            
+        }
+
+        .lovephoto{
+            margin-top: 10px;
+        }
+        
+        .rover{
+            margin-left: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="pos-head">
+            HAND GESTURE-CONTROLLED ROBOT CAR
+        </div>
+    </header>
+    
+    <section id="flexContainer">
+        <nav>
+            <div>
+                <h3 style="color: #feffff;">OBJECTIVES</h3>
+                <p class="pp">The goal of this project is to develop a robot car that can be remotely operated by gesture. In this project, the user can also operate the car's motions by equipping a controller hand glove and making specific gestures. Moreover, the robot car will ensure real-time response such as reduce time delay by improving the system, ensuring that the robot car will reacts quickly to the recognised hand signals. Reduce processing time and attaining real-time responsiveness by using effective algorithms and methodologies. </p>
+            </div>
+            <div class="hero">
+                <img src="photos\hero.png" width="280px" height="200px">
+            </div>
+        </nav>
+
+        <section class="content">
+            <div>
+                <h3 style="color: #feffff; text-align: center;">MATERIAL USED</h3>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="photos/18650.png" width="150px" height="150px">
+                    18650 Li-ion Battery
+                </div>
+                <div class="column">
+                    <img src="photos/adxl335.png" width="150px" height="150px">
+                    ADXL335 Accelerometer
+                </div>
+                <div class="column">
+                    <img src="photos/buzzer.png" width="150px" height="150px">
+                    Piezo Buzzer
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="photos/esp32.png" width="150px" height="150px">
+                    ESP32
+                </div>
+                <div class="column">
+                    <img src="photos/l298n.png" width="150px" height="150px">
+                    L298N Motor Driver
+                </div>
+                <div class="column">
+                    <img src="photos/sensor.png" width="150px" height="150px">
+                    Ultrasonic Sensor
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="photos/tt gear.png" width="150px" height="150px">
+                    TT Gear Motor
+                </div>
+                <div class="column">
+                    <img src="photos/wheel.png" width="150px" height="150px">
+                    DC Wheel
+                </div>
+                <div class="column">
+                    <img src="photos/wire.png" width="150px" height="150px">
+                    Jumper Wires
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div>
+                <h3 style="color: #feffff; text-align: center;">STEPS</h3>
+            </div>
+            <div>
+                <img src="photos/fotor-ai-2023080511928.jpg" width="200px" height="270px">
+            </div>
+            <div class="list">
+                <ol type="i">
+                    <li>Cutting the the base plate (acrylic board)</li>
+                    <li>Hot glue gunning the gear motor</li>
+                    <li>Attach the L298N motor driver to the downside of the board</li>
+                    <li>Solder some wire to connect the motor driver</li>
+                    <li>Installing the ESP32 and connecting to the motor driver</li>
+                    <li>Attach 18650 li-ion battery to power up</li>
+                    <li>Install ultrasonic sensor and buzzer</li>
+                    <li>Assemble transmitter device with accelerometer and ESP32</li>
+                    <li>Input algorithms to activate it</li>
+                </ol>
+            </div>
+        </aside>
+    </section>
+
+    <footer>
+        <div class="lovephoto">
+            <img src="photos\love.png" width="40px" height="40px">
+        </div>
+        <div class="pos-foot">
+            <h2 style="color: #feffff; text-align: center;">Prepared By Deston Tan</h2>
+            <div>
+                If you have any question, please contact me<br>
+                <a href="https://github.com/1DestonTTY/FYP"><img src="photos/github.png" width="30px" height="30px"></a>
+                <a href="https://www.instagram.com/deston_tan/"><img src="photos/instagram.png" width="30px" height="30px"></a>
+                <a href="https://wa.me/601110831026"><img src="photos/whatsapp.png" width="30px" height="30px"></a>
+            </div>
+        </div>
+        <div class="rover">
+            <img src="photos/rover.png" width="60px" height="60px">
+        </div>
+        
+    </footer>
+        
+</body>
+</html>
